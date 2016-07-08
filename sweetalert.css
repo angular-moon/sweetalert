@@ -379,8 +379,8 @@ body.stop-scrolling {
     transform: scale(0.95);
     -webkit-transform: scale(0.95); }
   100% {
-    transform: scale(1);
-    -webkit-transform: scale(1); } }
+    transform: scale(1) rotate(1deg);
+    -webkit-transform: scale(1) rotate(1deg); } }
 
 @keyframes showSweetAlert {
   0% {
@@ -393,8 +393,8 @@ body.stop-scrolling {
     transform: scale(0.95);
     -webkit-transform: scale(0.95); }
   100% {
-    transform: scale(1);
-    -webkit-transform: scale(1); } }
+    transform: scale(1) rotate(1deg);
+    -webkit-transform: scale(1) rotate(1deg); } }
 
 @-webkit-keyframes hideSweetAlert {
   0% {
