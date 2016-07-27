@@ -419,7 +419,11 @@ var handleButton = function handleButton(event, params, modal) {
 
       if (targetedConfirm && doneFunctionExists && modalIsVisible) {
         handleConfirm(modal, params);
-      } else if (doneFunctionExists && modalIsVisible || targetedOverlay) {
+        
+      //fix by moon 2016-6-27
+      //modalIsVisible 通过hasClass 判断有延迟, 正在显示时 modalIsVisible 会判断为 false
+      //增加 allowOutsideClick 的判断
+      } else if (doneFunctionExists && modalIsVisible || (targetedOverlay && params.allowOutsideClick)) {
         handleCancel(modal, params);
       } else if (_hasClass$isDescendant.isDescendant(modal, target) && target.tagName === 'BUTTON') {
         sweetAlert.close();
