@@ -3,12 +3,9 @@
     "description": "A beautiful replacement for JavaScript's alert",
     "name": "sweetalert",
     "main": "sweetalert.js",
-    "dependencies": [
-        "css"
-    ],
     "shim": {
         "sweetalert.js": {
-            "deps": ["css!sweetalert.css"],
+            "deps": ["sweetalert.css"],
             "exports": "sweetAlert"
         }
     }
